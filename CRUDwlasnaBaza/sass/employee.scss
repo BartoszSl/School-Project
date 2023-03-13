@@ -1,0 +1,285 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	position: relative;
+	height: 100vh;
+	background-image: url('../img/9d77401c96254bc7e8200de96a1f1314.png');
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+a {
+    color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.fwb {
+    font-weight: 700;
+}
+
+.violet-text {
+    color: #c75ae0;
+}
+
+.violet-text:hover {
+    color: #c75ae0;
+}
+
+.hero-shadow {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		135deg,
+		rgba(19, 65, 190, 0.95) 0%,
+		rgba(199, 90, 224, 0.95) 100%
+	);
+	z-index: -10;
+}
+
+.leftSide {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	.header {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		font-weight: 700;
+		font-size: 64px;
+	}
+	.gitHub {
+		position: absolute;
+		bottom: 10px;
+		font-size: 14px;
+		text-align: center;
+		width: 100%;
+		font-weight: 700;
+	}
+	.options {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		a {
+			font-size: 40px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 61px;
+			transition: color 0.4s;
+		}
+		a:last-child {
+			margin-bottom: 0;
+		}
+		.green-hover:hover {
+			color: #59b90e;
+		}
+		.blue-hover:hover {
+			color: #14aeae;
+		}
+		.red-hover:hover {
+			color: #f23838;
+		}
+	}
+}
+
+.rightSide {
+	display: flex;
+	width: 900px;
+	height: 800px;
+	margin: 0 auto;
+	box-shadow: 5px 5px 15px 5px rgba(56, 55, 55, 0.8);
+	border-radius: 40px;
+	.leftCard {
+		position: relative;
+		width: 450px;
+		background-image: url('../img/a11239ea7ae546b950ca30fa12adadf0.jfif');
+		border-radius: 40px 0px 0px 40px;
+		z-index: 0;
+		.shadow {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.85);
+			border-radius: 40px 0px 0px 40px;
+			z-index: -10;
+			.header {
+				position: absolute;
+				top: 20px;
+				left: 40px;
+				h2 {
+					color: white;
+					text-transform: uppercase;
+					font-size: 36px;
+					font-weight: 700;
+					span {
+						position: absolute;
+						top: 40px;
+					}
+				}
+			}
+			.content {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				height: 680px;
+				width: 380px;
+				background-color: #fff;
+				border-radius: 40px 0px 0px 0px;
+				h3 {
+					position: absolute;
+					top: 35px;
+					left: 35px;
+					font-size: 32px;
+					font-weight: 700;
+				}
+				.data {
+					position: absolute;
+					top: 135px;
+					left: 57px;
+					p {
+						color: #666565;
+						margin-bottom: 15px;
+						span {
+							color: black;
+						}
+					}
+					p:last-child {
+						margin-bottom: 0;
+					}
+					.comments {
+						display: flex;
+						.commentsText {
+							max-width: 250px;
+							max-height: 200px;
+							margin-left: 5px;
+						}
+					}
+				}
+				.buttons {
+					position: absolute;
+					display: flex;
+					bottom: 80px;
+					left: 33px;
+					.buttonLink {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 150px;
+						height: 35px;
+						font-weight: bold;
+						text-transform: uppercase;
+						font-size: 24px;
+						border-radius: 5px;
+						transition: all 0.4s;
+					}
+					.editButton {
+						background-color: #14aeae;
+						margin-right: 20px;
+					}
+					.deleteButton {
+						background-color: #f23838;
+					}
+					.buttonLink:hover {
+						transform: scale(1.05);
+						box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.85);
+					}
+				}
+			}
+		}
+	}
+	.rightCard {
+		width: 450px;
+		background-color: #fff;
+		border-radius: 0px 40px 40px 0px;
+		z-index: 1;
+		.searchForm {
+			width: 100%;
+			height: 120px;
+			background-color: #d9d9d9;
+			border-radius: 0px 40px 0px 0px;
+			form {
+				display: flex;
+				height: 100%;
+				margin-left: 22px;
+				align-items: center;
+				input {
+					width: 304px;
+					height: 50px;
+					border: none;
+					border-radius: 10px;
+					padding-left: 20px;
+					font-size: 20px;
+					margin-right: 24px;
+				}
+				input::placeholder {
+					color: black;
+				}
+				.searchIcon {
+					cursor: pointer;
+					width: 50px;
+					height: 50px;
+					font-size: 28px;
+					transform: rotate(90deg);
+					border: none;
+					background-color: white;
+					border-radius: 10px;
+				}
+			}
+		}
+		.dataBase {
+			margin: 33px auto 0;
+			width: 350px;
+			height: 600px;
+			border: 1px solid black;
+			border-radius: 30px;
+            overflow-y: auto;
+			.dataBaseCard {
+				display: flex;
+				width: 300px;
+				height: 60px;
+				border-radius: 5px;
+				margin: 26px auto -22px;
+				background-color: #d9d9d9;
+				color: #666565;
+				font-size: 12px;
+				transition: all 0.4s;
+				.inf {
+					display: flex;
+					flex-direction: column;
+					margin-top: 10px;
+					margin-left: 11px;
+					p {
+						margin-right: 10px;
+						margin-bottom: 8px;
+					}
+				}
+			}
+			.dataBaseCard:hover {
+				background-color: #666565;
+				color: white;
+                box-shadow: 0px 0px 10px 0px rgb(56, 55, 55);
+			}
+		}
+	}
+}
